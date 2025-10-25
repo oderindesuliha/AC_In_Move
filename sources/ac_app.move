@@ -43,7 +43,6 @@ public fun ac_state(ac: &Airconditioner): bool {
         false
     }
 }   
-
 public fun increase_temperature(ac: &mut Airconditioner): String {
     if (!ac.isOn) {
         return std::string::utf8(b"Invalid Operation")
